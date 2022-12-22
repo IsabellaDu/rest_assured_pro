@@ -1,0 +1,15 @@
+{
+  "type": "object",
+  "required": [
+    "id",
+    "color"
+  ],
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "color": {
+      "type": "string"
+    }
+  }
+}

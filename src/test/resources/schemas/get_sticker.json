@@ -1,0 +1,31 @@
+{
+  "type": "object",
+  "required": [
+    "id",
+    "top",
+    "left",
+    "zIndex",
+    "rotate",
+    "image"
+  ],
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "top": {
+      "type": "integer"
+    },
+    "left": {
+      "type": "number"
+    },
+    "zIndex": {
+      "type": "integer"
+    },
+    "rotate": {
+      "type": "integer"
+    },
+    "image": {
+      "type": "string"
+    }
+  }
+}

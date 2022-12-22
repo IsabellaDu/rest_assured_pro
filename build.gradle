@@ -1,0 +1,27 @@
+plugins {
+    id 'java'
+}
+
+group 'org.example'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation 'io.rest-assured:rest-assured:5.3.0'
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.9.1'
+    testImplementation 'io.rest-assured:json-schema-validator:5.3.0'
+    //parametrized JUnit test for ID:
+    testImplementation 'org.junit.jupiter:junit-jupiter-params:5.9.1'
+}
+
+
+tasks.withType(Test) {
+    scanForTestClasses = false
+    include "java/GetBoardsTest.class" // whatever Ant pattern matches your test class files
+}
+test {
+    useJUnitPlatform()
+}
