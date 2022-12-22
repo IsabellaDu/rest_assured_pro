@@ -13,7 +13,6 @@ import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.ArgumentsSource;
 import test.BaseTest;
 
-import java.util.Map;
 
 public class GetLabelValidationTest extends BaseTest {
 
